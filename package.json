@@ -1,0 +1,36 @@
+{
+  "name": "const-settings",
+  "version": "0.0.1",
+  "description": "You can easily use it by defining the value in config/settings.yaml",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p ./tsconfig.json",
+    "test": "jest"
+  },
+  "author": {
+    "name": "smicle",
+    "email": "bhhs1270026@gn.iwasaki.ac.jp",
+    "url": "https://github.com/smicle"
+  },
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smicle/const-settings.git"
+  },
+  "bugs": {
+    "url": "https://github.com/smicle/const-settings/issues",
+    "email": "bhhs1270026@gn.iwasaki.ac.jp"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "yaml",
+    "settings"
+  ],
+  "homepage": "https://github.com/smicle/const-settings#readme",
+  "dependencies": {
+    "@types/js-yaml": "^3.12.4",
+    "js-yaml": "^3.13.1"
+  }
+}
