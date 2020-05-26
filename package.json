@@ -32,5 +32,10 @@
   "dependencies": {
     "@types/js-yaml": "^3.12.4",
     "js-yaml": "^3.13.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.2.3",
+    "jest": "^26.0.1",
+    "ts-jest": "^26.0.0"
   }
 }
