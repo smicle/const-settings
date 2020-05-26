@@ -25,3 +25,8 @@ import Settings from 'const-settings'
 
 Settings.IDOL.forEach((v: string) => console.log(v))
 ```
+
+## Test
+```sh
+npm run test
+```
