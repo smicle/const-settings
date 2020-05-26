@@ -12,12 +12,14 @@ npm install const-settings
 Write constants in config/settings.yaml
 
 ## Usage
+### JavaScript
 ```js
 const Settings = require('const-settings').default
 
 Settings.IDOL.forEach(v => console.log(v))
 ```
 
+### TypeScript
 ```ts
 import Settings from 'const-settings'
 
