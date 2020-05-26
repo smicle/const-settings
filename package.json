@@ -1,6 +1,6 @@
 {
   "name": "const-settings",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "You can easily use it by defining the value in config/settings.yaml",
   "main": "dist/index.js",
   "scripts": {
