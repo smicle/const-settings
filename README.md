@@ -1,4 +1,5 @@
 # const-settings
+[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 
 ## Intro
 You can easily use it by defining the value in config/settings.yaml
