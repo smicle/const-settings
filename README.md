@@ -1,4 +1,5 @@
 # const-settings
+[![npm version](https://badge.fury.io/js/const-settings.svg)](https://badge.fury.io/js/const-settings)
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 
 ## Intro
