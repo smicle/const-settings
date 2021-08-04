@@ -1,11 +1,27 @@
 import * as fs from 'fs'
-import * as yaml from 'js-yaml'
+import * as load from './load'
 
-const yml = fs.readFileSync(`${process.cwd()}/config/settings.yaml`)
-const option = 'utf-8' as yaml.LoadOptions
-/**
- * Structure of the contents of config/settings.yaml
- */
-const Settings = yaml.safeLoad(String(yml), option)
+const path = `${process.cwd()}/config/settings`
+let Settings = {}
+
+// For yaml
+if (fs.existsSync(`${path}.yaml`)) {
+  const yml = load.YAML(`${path}.yaml`)
+  Settings = {...Settings, ...yml}
+}
+// For yml
+if (fs.existsSync(`${path}.yml`)) {
+  const yml = load.YAML(`${path}.yml`)
+  Settings = {...Settings, ...yml}
+}
+// For directories
+if (fs.existsSync(path)) {
+  // Get only YAML files
+  const files = fs.readdirSync(path).filter(f => /^.*\.ya?ml$/.test(f))
+  files.forEach(f => {
+    const yml = load.YAML(`${path}/${f}`)
+    Settings = {...Settings, ...yml}
+  })
+}
 
 export default Settings
