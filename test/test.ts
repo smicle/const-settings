@@ -1,4 +1,4 @@
-import Settings from '../src'
+import Settings from '../dist'
 
 describe('Get the value of settings.yaml', () => {
   test('I was able to get the value', () => {
